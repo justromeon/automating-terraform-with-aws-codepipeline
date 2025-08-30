@@ -1,1 +1,1 @@
-stage2-parameter-store
+stage3-secrets-manager
