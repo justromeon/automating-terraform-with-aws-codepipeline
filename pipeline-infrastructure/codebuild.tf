@@ -1,6 +1,6 @@
 # Single CodeBuild project for demo
 resource "aws_codebuild_project" "demo_build" {
-  name         = "${var.project_name}-demo-build"
+  name         = "${var.project_name}-demo-build-justromeon"
   service_role = aws_iam_role.codebuild_role.arn
 
   artifacts {

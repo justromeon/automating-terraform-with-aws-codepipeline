@@ -1,3 +1,1 @@
-stage4-manual-approval
-apply
-prod
+stage2-parameter-store

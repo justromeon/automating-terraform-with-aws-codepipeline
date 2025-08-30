@@ -1,6 +1,6 @@
 # Simple Demo Pipeline
 resource "aws_codepipeline" "terraform_pipeline" {
-  name     = "${var.project_name}-demo-pipeline"
+  name     = "${var.project_name}-demo-pipeline-justromeon"
   role_arn = aws_iam_role.codepipeline_role.arn
 
   artifact_store {
@@ -47,7 +47,7 @@ resource "aws_codepipeline" "terraform_pipeline" {
   stage {
     name = "Deploy"
     action {
-      name            = "Deploy-Demo-Stage"
+      name            = "Deploy-Demo-Stage-justromeon"
       category        = "Build"
       owner           = "AWS"
       provider        = "CodeBuild"
@@ -61,6 +61,6 @@ resource "aws_codepipeline" "terraform_pipeline" {
   }
 
   tags = {
-    Name = "${var.project_name}-demo-pipeline"
+    Name = "${var.project_name}-demo-pipeline-justromeon"
   }
 }
